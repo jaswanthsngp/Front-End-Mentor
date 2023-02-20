@@ -11,10 +11,31 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    * {  
+    *, *::before, *::after {
       box-sizing: border-box;
+    }
+    * {
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    input, button, textarea, select {
+      font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+    }
+    #root, #__next {
+      isolation: isolate;
     }
     body{
       display: flex;
@@ -22,7 +43,7 @@
       justify-content: center;
       align-content: center;
       flex-flow: row wrap;
-      height: 100vh;
+      min-height: 100vh;
       background-color: hsl(212, 45%, 89%);
       font-family: "Outfit";
     }
