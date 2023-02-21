@@ -10,7 +10,6 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    display: flex;
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -28,49 +27,107 @@
 
   body{
     display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
     min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
   }
 
   .outer{
     display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: hsl(30, 38%, 92%);
-  }
-  .inner{
-    display: flex;
     width: 90%;
     height: 90%;
-    margin: auto;
+    margin: 5%;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
   }
   .text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
     background-color: hsl(0, 0%, 100%);
-    width: 90%;
-    margin: auto;
-  }
-  img{
     width: 100%;
+    border-radius: 5%;
   }
-  .sans{
-    font-size: 1rem;
+  .mob-img{
+    width: 100%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+  }
+  .dsk-img{
+    visibility: hidden;
+    width: 0%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+  }
+  h1, p{
+    width: 90%;
+    margin: 3% auto;
+  }
+  .wide{
+    font-size: 0.85rem;
     font-family: Montserrat;
     font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 0.5cap;
+    margin-top: 5%;
+    border-radius: 5%;
+  }
+  .sans{
+    font-size: 0.85rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
   }
   h1, .price{
     font-size: 2rem;
     font-family: Fraunces;
-    font-weight: 700;
+    font-weight: 900;
+  }
+  h1{
+    line-height: 90%;
+  }
+  .price{
+    color: hsl(158, 36%, 37%);
   }
   button{
     font-size: 1rem;
     font-family: Montserrat;
     font-weight: 700;
-    display: block;
+    display: inline-block;
     width: 90%;
-    margin: auto;
+    margin: 5%;
+    margin-top: 0%;
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
-    padding: 3% 1%;
+    padding: 3%;
+    border: none;
+    border-radius: 5%;
+  }
+  button:active{
+    background-color: hsl(158, 36%, 30%);
+  }
+
+  @media (min-width: 992px) {
+    .mob-img{
+      visibility: hidden;
+      width: 0%;
+    }
+    .dsk-img{
+      visibility: visible;
+      width: 50%;
+    }
+    .outer{
+      flex-direction: row;
+      width: 50%;
+      height: 50%;
+    }
+    .text{
+      width: 50%;
+      align-items: stretch;
+    }
   }
