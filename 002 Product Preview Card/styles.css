@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    min-height: 100vh;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .outer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+  }
+  .inner{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .text{
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    margin: auto;
+  }
+  img{
+    width: 100%;
+  }
+  .sans{
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 500;
+  }
+  h1, .price{
+    font-size: 2rem;
+    font-family: Fraunces;
+    font-weight: 700;
+  }
+  button{
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 3% 1%;
+  }
