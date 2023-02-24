@@ -107,9 +107,13 @@
     padding: 3%;
     border: none;
     border-radius: 5%;
+    text-align: center;
   }
   button:active{
     background-color: hsl(158, 36%, 30%);
+  }
+  .cart{
+    display: inline;
   }
 
   @media (min-width: 992px) {
