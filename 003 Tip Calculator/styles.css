@@ -30,15 +30,25 @@
     font-family: "Space Mono";
   }
 
+  main{
+    width: 100%;
+  }
+
   .logo{
     display: block;
     margin: auto;
   }
 
-  main{
+  form{
     background-color: white;
     width: 100%;
     border-radius: 5%;
+  }
+
+  label{
+    margin: 5%;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
   }
 
   #total-bill{
@@ -53,4 +63,26 @@
     border: none;
     border-radius: 5px;
     outline: none;
+  }
+
+  #total-bill:focus{
+    border: 3px solid hsl(183, 100%, 15%);
+  }
+
+  #headcount{
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: hsl(189, 41%, 97%);
+    background-image: url("./images/icon-person.svg");
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 2% 2% 2% 6%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  #headcount:focus{
+    border: 3px solid hsl(183, 100%, 15%);
   }

@@ -11,29 +11,30 @@
   <title>Tip calculator app</title>
 </head>
 <body>
-
-  <img src="./images/logo.svg" alt="SPLITTER Logo" class="logo">
   <main>
+    <img src="./images/logo.svg" alt="SPLITTER Logo" class="logo">
+    <form>
     <label for="total-bill">Bill</label>
     <input type="text" id="total-bill" name="total-bill">
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
+    <fieldset>
+    <legend> Select Tip % </legend>
+    5%
+    10%
+    15%
+    25%
+    50%
+    Custom
+    </fieldset>
+    <label for=""> Number of People </label>
+    <input type="text" id="headcount" name="headcount">
   Tip Amount
   / person
 
   Total
   / person
 
-  Reset
+  <button type="reset">RESET</button>
+    </form>
   </main>
 </body>
 </html>
