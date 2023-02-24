@@ -106,7 +106,7 @@
     color: hsl(0, 0%, 100%);
     padding: 3%;
     border: none;
-    border-radius: 5%;
+    border-radius: 7px;
     text-align: center;
   }
   button:active{
