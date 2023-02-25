@@ -1,0 +1,135 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    min-height: 100%;
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    color: white;
+    background-color: hsl(216, 12%, 8%);
+    font-family: Overpass;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .card{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 415px;
+    background-color: hsl(212, 22%, 14%);
+    padding: 5%;
+    border-radius: 5%;
+  }
+
+  #star-icon{
+    padding: 3%;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%); 
+  }
+  
+  #ask h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2.5% 0;
+  }
+
+  #ask p{
+    font-size: 1rem;
+    color: hsl(216, 12%, 54%);
+  }
+
+  .radio{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% auto;
+  }
+
+  .radio input{
+    display: none;
+  }
+
+  .radio label{
+    display: inline-block;
+    color: hsl(216, 12%, 54%);
+    padding: 3% 5%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 5rem;
+  }
+
+  .radio input:checked+label{
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white;
+  }
+
+  .radio input:hover+label{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+  }
+
+  button{
+    display: block;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    width: 100%;
+    padding: 2%;
+    border-radius: 10rem;
+    border: none;
+  }
+
+  button:hover, button:active, button:focus{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+  }
+
+  #thanks-img{
+    margin: auto;
+    padding: 5%;
+  }
+
+  #thanks p.tell{
+    width: fit-content;
+    margin: 5% auto;
+    padding: 2% 5% 1% 5%;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50px;
+  }
+
+  #thanks h1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2.5%;
+  }
+
+  #thanks p{
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+  }
+
+  .hide{
+    display: none;
+  }
