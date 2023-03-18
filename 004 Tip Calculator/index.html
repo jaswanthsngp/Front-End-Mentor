@@ -14,8 +14,8 @@
   <main>
     <img src="./images/logo.svg" alt="SPLITTER Logo" class="logo">
     <form>
-    <label for="total-bill">Bill</label>
-    <input type="text" id="total-bill" name="total-bill">
+    <label for="initial-bill">Bill</label>
+    <input type="text" id="initial-bill" name="initial-bill">
     <fieldset>
     <legend> Select Tip % </legend>
     5%
@@ -25,15 +25,19 @@
     50%
     Custom
     </fieldset>
-    <label for=""> Number of People </label>
+    <label for="headcount"> Number of People </label>
     <input type="text" id="headcount" name="headcount">
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  <button type="reset">RESET</button>
+    <div class="result">
+      <div class="output">
+        <p><span class="sig">Tip Amount</span><span class="no-sig">/ person</span></p>
+        <input type="text" name="tip-amount" id="tip-amount">
+      </div>
+      <div class="output">
+        <p><span class="sig">Total</span><span class="no-sig">/ person</span></p>
+        <input type="text" name="total" id="total">
+      </div>
+      <button class="reset" type="reset">RESET</button>
+    </div>
     </form>
   </main>
 </body>

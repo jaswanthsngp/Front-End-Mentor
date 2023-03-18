@@ -28,6 +28,12 @@
   body{
     background-color: hsl(185, 41%, 84%);
     font-family: "Space Mono";
+    font-weight: 700;
+    color: hsl(186, 14%, 43%)
+  }
+
+  body *{
+    margin: 0.25rem 0;
   }
 
   main{
@@ -42,47 +48,87 @@
   form{
     background-color: white;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 1rem;
+    padding: 1rem;
   }
 
-  label{
-    margin: 5%;
-    color: hsl(186, 14%, 43%);
-    font-weight: 700;
+  form input[type="text"]{
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: right;
   }
 
-  #total-bill{
+  #initial-bill, #headcount{
     display: block;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    color: hsl(183, 100%, 15%);
     background-color: hsl(189, 41%, 97%);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding: 1% 3% 1% 6%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  #initial-bill{
     background-image: url("./images/icon-dollar.svg");
-    background-position: 10px;
-    background-repeat: no-repeat;
-    padding: 2% 2% 2% 6%;
-    border: none;
-    border-radius: 5px;
-    outline: none;
+  }
+  #headcount{
+    background-image: url("./images/icon-person.svg");
   }
 
-  #total-bill:focus{
+  #initial-bill:focus, #headcount:focus{
     border: 3px solid hsl(183, 100%, 15%);
   }
 
-  #headcount{
+  .result{
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(189, 41%, 97%);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .output{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .output p, .output input[type="text"]{
+    width: 50%;
+  }
+
+  .output p .sig{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .output p .sig{
+    font-size: 1rem;
+    color: hsl(189, 41%, 97%);
+  }
+
+  .output p .no-sig{
+    font-size: 0.7rem;
+    color: hsl(185, 41%, 84%);
+  }
+
+  .output input[type="text"]{
+    color: hsl(172, 67%, 45%);
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+  }
+
+  .reset{
     display: block;
     width: 90%;
-    margin: auto;
-    background-color: hsl(189, 41%, 97%);
-    background-image: url("./images/icon-person.svg");
-    background-position: 10px;
-    background-repeat: no-repeat;
-    padding: 2% 2% 2% 6%;
+    margin: 0 5%;
+    padding: 2%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
     border: none;
     border-radius: 5px;
-    outline: none;
-  }
-
-  #headcount:focus{
-    border: 3px solid hsl(183, 100%, 15%);
+    font-weight: bold;
   }
